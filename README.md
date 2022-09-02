@@ -6,7 +6,8 @@ To install requirements:
 ```
 pip install git+https://github.com/ISYSLAB-HUST/NeuroPred-PLM.git
 ```
-### Usage
+### Usage [<img src="https://colab.research.google.com/assets/colab-badge.svg">](https://colab.research.google.com/github/ISYSLAB-HUST/NeuroPred-PLM/blob/master/notebook/NeuroPred_PLM_test.ipynb)
+
 
 ```
 import torch
