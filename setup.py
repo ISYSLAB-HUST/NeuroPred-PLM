@@ -16,6 +16,11 @@ setup(name='NeuroPredPLM',
       author_email='wanglei94@hust.edu.cn',
       license='MIT',
       packages=['NeuroPredPLM'],
-      install_requires=find_packages("NeuroPredPLM"),
+      install_requires=[
+        'einops',
+        'fair-esm',
+        'torch',
+        'numpy'
+    ],
       include_package_data=True,
       zip_safe=False)
