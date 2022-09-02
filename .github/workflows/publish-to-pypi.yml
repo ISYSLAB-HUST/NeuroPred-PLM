@@ -3,21 +3,21 @@ on: push
 
 jobs:
   deploy:
-    name: Upload Python Package
+
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@master
-    - name: Set up Python 3.8
-      uses: actions/setup-python@v1
+    - name: Set up Python
+      uses: actions/setup-python@v2
       with:
-        python-version: 3.8
+        python-version: '3.x'
     - name: Install pypa/build
-    run: >-
-      python -m
-      pip install
-      build
-      --user
+      run: >-
+        python -m
+        pip install
+        build
+        --user
     - name: Build a binary wheel and a source tarball
       run: >-
         python -m
